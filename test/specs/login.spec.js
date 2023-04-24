@@ -1,6 +1,6 @@
-const MyStoreScreen = require("../screens/MyStore.screen.js")
-const HomeScreen = require("../screens/home.screen.js")
-const LoginScreen = require("../screens/login.screen.js")
+const MyStoreScreen = require("../screens/myStore.screen")
+const HomeScreen = require("../screens/home.screen")
+const LoginScreen = require("../screens/login.screen")
 
 let url = 'http://lojaebac.ebaconline.art.br/';
 let email = 'lojaebacqe@gmail.com';
@@ -15,7 +15,7 @@ describe('Access Admin Panel', () => {
         await LoginScreen.continue();
         await LoginScreen.StoreAddress(email);
         await LoginScreen.continue();
-        await LoginScreenn.StoreAddresssenha(senha);
+        await LoginScreen.StoreAddresssenha(senha);
         await LoginScreen.continue();
 
         expect(await MyStoreScreen.myStoreLogoIsDisplayed()).toBeTruthy();

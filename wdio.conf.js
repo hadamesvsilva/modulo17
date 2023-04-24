@@ -13,14 +13,14 @@ exports.config = {
   services: ['chromedriver'],
   framework: 'mocha',
   capabilities: [{
-    "platformName": "Android",
+    platformName: "Android",
     "appium:platformVersion": "11.0",
     "appium:deviceName": "ebac-qe",
     "appium:automationName": "UiAutomator2",
-    "app": join(process.cwd(), 'C:/repositorio/testes-mobile-ebac-shop2/app/android/loja-ebac (1).apk'),
+    //"app": join(process.cwd(), 'C:/repositorio/testes-mobile-ebac-shop2/app/android/loja-ebac (1).apk'),
     "appium:appPackage": "com.woocommerce.android",
     "appium:appActivity": ".ui.main.MainActivity",
-    "appium:appWaitActivity": "com.woocommerce.android.ui.login.LoginActivity"
+    "appium:appWaitActivity": "com.woocommerce.android.ui.login.LoginActivity",
   }],
 
   waitForTimeout: 20000,

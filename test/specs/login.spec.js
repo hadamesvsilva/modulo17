@@ -1,4 +1,4 @@
-const MyStoreScreen = require("../screens/myStore.screen")
+const MyStoreScreen = require("../screens/MyStore.screen")
 const HomeScreen = require("../screens/home.screen")
 const LoginScreen = require("../screens/login.screen")
 
@@ -8,7 +8,6 @@ let senha = 'GD*peToHNJ1#c$sgk08EaYJQ';
 
 describe('Access Admin Panel', () => {
     it('should login with valid credentials', async () => {
-        await HomeScreen.goToButtonLogin();
         await HomeScreen.goToLogin();
         await LoginScreen.StoreAddress(url);
         await LoginScreen.continue();

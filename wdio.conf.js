@@ -32,7 +32,7 @@ exports.config = {
   reporters: ['spec',
     ['video', {
       saveAllVideos: true,
-      videoSlowdownMultiplier: 50
+      videoSlowdownMultiplier: 15
     }],
     ['allure', {
       outputDir: 'allure-results',
